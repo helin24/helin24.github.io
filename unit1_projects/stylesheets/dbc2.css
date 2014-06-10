@@ -2,7 +2,7 @@
 	float: center;
 	margin-left: auto;
 	margin-right: auto;
-	height: 600px;
+	height: 700px;
 }
 
 .box .section {
@@ -26,18 +26,19 @@
 }
 
 .box .image {
-	width: 33%;
+	width: auto;
 	float: right;
+	padding: 10px;
 }
 
 .box .image img {
-	width: 40%;
+	width: 60%;
 	height: auto;
 }
 
-h2 {
+h4 {
 	position: relative;
-	top: -10px;
+	top: 10px;
 	left: 0px;
 }
 
