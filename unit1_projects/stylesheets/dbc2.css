@@ -14,7 +14,7 @@
 
 .box .aside {
 	border: 2px solid blue;
-	float: center;
+	float: right;
 	width: 25%;
 	padding: 10px;
 }
