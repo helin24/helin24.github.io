@@ -1,5 +1,5 @@
 .box {
-	float: center;
+	float: left;
 	border: 2px solid blue;
 	margin-left: auto;
 	margin-right: auto;
@@ -36,7 +36,7 @@ article {
 }
 
 .footer {
-	float: center;
+	float: left;
 	margin-top: 10px;
 	border: 2px solid blue;
 	padding: 10px;
