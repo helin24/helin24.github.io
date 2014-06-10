@@ -7,14 +7,14 @@
 
 .box .section {
 	border: 2px solid blue;
-	float: left;
+	float: center;
 	width: 60%;
 	padding: 15px;
 }
 
 .box .aside {
 	border: 2px solid blue;
-	float: right;
+	float: center;
 	width: 30%;
 	padding: 10px;
 }
