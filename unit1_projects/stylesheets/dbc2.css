@@ -26,11 +26,16 @@
 }
 
 .box .image {
-	position: relative;
+	float: right;
+}
+
+.box .image img {
+	width: 60%;
+	height: auto;
 }
 
 h2 {
-	position: absolute;
+	position: relative;
 	top: 0px;
 	left: 0px;
 }
