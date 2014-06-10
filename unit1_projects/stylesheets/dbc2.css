@@ -1,11 +1,26 @@
-section {
+.section {
 	float: left;
 	width: 65%;
 	border: 2px solid blue;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 25px;
 }
 
-aside {
+.aside {
 	float: right;
 	width: 30%;
-	border: 2px solid blue;
+	border: 2px solid blue;		
+	margin-left: auto;
+	margin-right: auto;
+	padding: 10px;
+}
+
+article {
+	float: center;
+	width: 80%;
+	border: 1px solid green;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 10 px;
 }
