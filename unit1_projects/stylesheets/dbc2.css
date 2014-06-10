@@ -1,24 +1,24 @@
-.section {
-	float: left;
-	width: 60%;
+.box {
 	border: 2px solid blue;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+#section {
+	float: left;
+	width: 60%;
 	padding: 15px;
 }
 
-.aside {
+#aside {
 	float: right;
 	width: 30%;
-	border: 2px solid blue;		
-	margin-left: auto;
-	margin-right: auto;
 	padding: 10px;
 }
 
 article {
 	float: center;
-	width: 80%;
+	width: 90%;
 	border: 1px solid green;
 	margin-left: auto;
 	margin-right: auto;
