@@ -12,6 +12,7 @@
 	margin-right: auto;
 	width: 63%;
 	padding: 10px;
+	background-color: aliceblue;	
 }
 
 .box .aside {
@@ -21,6 +22,7 @@
 	margin-right: auto;
 	width: 33%;
 	padding: 10px;
+	background-color: aliceblue;
 }
 
 article {
@@ -50,5 +52,6 @@ article {
 	margin-left: auto;
 	margin-right: auto;
 	padding: 10px;
+	background-color: aliceblue;
 }
 
