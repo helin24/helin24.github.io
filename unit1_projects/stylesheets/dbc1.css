@@ -11,3 +11,7 @@ Use ids and classes to change specific elements
 #contact {
 	color: blue;
 }
+
+h1 {
+	letter-spacing: 2;
+}
