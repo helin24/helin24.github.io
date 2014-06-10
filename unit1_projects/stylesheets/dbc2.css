@@ -1,17 +1,19 @@
 .box {
-	border: 2px solid blue;
+	float: left;
 	margin-left: auto;
 	margin-right: auto;
 	width: 90%;
 }
 
 .box .section {
+	border: 2px solid blue;
 	float: left;
 	width: 60%;
 	padding: 15px;
 }
 
 .box .aside {
+	border: 2px solid blue;
 	float: right;
 	width: 30%;
 	padding: 10px;
@@ -36,6 +38,7 @@ article {
 }
 
 .footer {
+	float: left;
 	margin-top: 10px;
 	border: 2px solid blue;
 	margin-left: auto;
