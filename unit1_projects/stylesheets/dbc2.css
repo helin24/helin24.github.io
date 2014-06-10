@@ -12,7 +12,6 @@
 }
 
 .box .aside {
-	float: right;
 	width: 30%;
 	padding: 10px;
 }
@@ -36,7 +35,6 @@ article {
 }
 
 .footer {
-	float: left;
 	margin-top: 10px;
 	border: 2px solid blue;
 	padding: 10px;
