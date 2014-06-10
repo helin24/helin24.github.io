@@ -25,6 +25,16 @@
 	background-color: aliceblue;
 }
 
+.box .image {
+	position: relative;
+}
+
+h2 {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
 article {
 	float: center;
 	border: 1px solid green;
@@ -56,3 +66,10 @@ article {
 	background-color: aliceblue;
 }
 
+a:hover {
+	color: lightcoral;
+}
+
+* {
+	font-family: arial;
+}
