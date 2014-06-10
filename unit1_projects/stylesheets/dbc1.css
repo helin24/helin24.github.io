@@ -20,6 +20,7 @@ h1 {
 #main {
 	width: 70%;
 	margin: auto;
-	background: black;
+	padding: 10px;
+	background: gray;
 	border: 2px solid green;
 }
