@@ -2,6 +2,7 @@
 	border: 2px solid blue;
 	margin-left: auto;
 	margin-right: auto;
+	width: 90%;
 }
 
 .box .section {
@@ -37,6 +38,9 @@ article {
 .footer {
 	margin-top: 10px;
 	border: 2px solid blue;
+	margin-left: auto;
+	margin-right: auto;
 	padding: 10px;
+	width: 90%;
 }
 
