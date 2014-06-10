@@ -8,14 +8,14 @@
 .box .section {
 	border: 2px solid blue;
 	float: center;
-	width: 60%;
+	width: 55%;
 	padding: 15px;
 }
 
 .box .aside {
 	border: 2px solid blue;
 	float: center;
-	width: 30%;
+	width: 25%;
 	padding: 10px;
 }
 
