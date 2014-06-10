@@ -26,13 +26,13 @@
 }
 
 .box .image {
-	width: auto;
+	width: 33%;
 	float: right;
 	padding: 10px;
 }
 
 .box .image img {
-	width: 40%;
+	width: 60%;
 	height: auto;
 }
 
