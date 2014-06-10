@@ -25,9 +25,14 @@
 	background-color: aliceblue;
 }
 
-.box .aside img {
+.box .image {
+	width: auto;
+	float: right;
+}
+
+.box .image img {
 	width: 40%;
-	height: 40%;
+	height: auto;
 }
 
 h2 {
