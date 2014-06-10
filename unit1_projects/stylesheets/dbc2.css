@@ -2,7 +2,6 @@
 	float: center;
 	margin-left: auto;
 	margin-right: auto;
-	width: 90%;
 	height: 400px;
 }
 
@@ -26,11 +25,10 @@
 
 article {
 	float: center;
-	width: 90%;
 	border: 1px solid green;
 	margin-left: auto;
 	margin-right: auto;
-	padding: 10px;
+	padding: 15px;
 }
 
 .header {
@@ -39,7 +37,8 @@ article {
 	border: 2px solid blue;
 	background-color: aliceblue;
 	font-size: 26px;
-	font-style: bold;
+	font-weight: bold;
+	text-align: center;
 	padding: 20px;
 }
 
@@ -50,6 +49,5 @@ article {
 	margin-left: auto;
 	margin-right: auto;
 	padding: 10px;
-	width: 90%;
 }
 
