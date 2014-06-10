@@ -1,0 +1,13 @@
+/*
+Link file to html file using external method
+Add colors, background colors or fonts to different parts of the page
+Use ids and classes to change specific elements
+*/
+
+.key {
+	color: green;
+}
+
+#contact {
+	color: blue;
+}
