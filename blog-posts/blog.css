@@ -1,5 +1,5 @@
 .* {
-	font-style: arial;
+	font-style: sans-serif;
 }
 
 body {
@@ -23,7 +23,8 @@ section {
 	margin: 15px;
 	opacity: 0.8;
 	background-color: white;
-	padding: 10px;
+	padding: 20px;
+	border-radius: 3;
 }	
 
 h2 {
@@ -40,7 +41,8 @@ aside {
 	margin: 15px;
 	opacity: 0.8;
 	background-color: white;
-	padding: 10px;
+	padding: 20px;
+	border-radius: 3;
 }
 
 footer {
@@ -48,8 +50,9 @@ footer {
 	width: 90%;
 	margin: auto;
 	padding: 10px;
-	color: cornsilk;
-	border: 2px solid cornsilk;
+	color: white;
+	border: 2px solid white;
+	border-radius: 3;
 }
 
 a {
