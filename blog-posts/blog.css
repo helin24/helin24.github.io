@@ -14,7 +14,7 @@ header {
 	margin: 15px;
 	font-size: 48px;
 	font-weight: bold;
-	color: darkgreen;
+	color: darkblue;
 	border-bottom-color: black;
 	border-bottom-width: 2px;
 }
@@ -64,5 +64,5 @@ a {
 }
 
 a:hover {
-	color:darkorange;
+	color:lightskyblue;
 }
