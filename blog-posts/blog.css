@@ -10,9 +10,9 @@ body {
 header {
 	float: left;
 	width: 90%;
-	font-size: 26;
+	font-size: 48;
 	font-weight: bold;
-	color: darkred;
+	color: darkgreen;
 	border-bottom-color: black;
 	border-bottom-width: 2px;
 }
@@ -20,12 +20,12 @@ header {
 section {
 	float: left;
 	width: 60%;
-	margin-left: auto;
-	margin-right: auto;
-	opacity: 0.6;
+	margin-left: 20px;
+	margin-right: 20px;
+	opacity: 0.8;
 	background-color: white;
-	padding: 10px;
-}
+	padding: 20px;
+}	
 
 h2 {
 	color: firebrick;
@@ -38,9 +38,9 @@ p {
 aside {
 	float: right;
 	width: 30%;
-	margin-left: auto;
-	margin-right: auto;
-	opacity: 0.6;
+	margin-left: 20px;
+	margin-right: 20px;
+	opacity: 0.8;
 	background-color: white;
 	padding: 10px;
 }
@@ -50,5 +50,14 @@ footer {
 	width: 90%;
 	margin: auto;
 	padding: 10px;
-	color: white;
+	color: cornsilk;
+	border: 2px solid cornsilk;
+}
+
+a {
+	color: darkblue;
+}
+
+a:hover {
+	color:darkorange;
 }
