@@ -32,7 +32,6 @@ section {
 	margin: 15px;
 	margin-right: 10px;
 	background-color: rgba(255, 255, 255, 0.6);
-	background-color: white;
 	padding: 20px;
 	border-radius: 10px;
 }	
@@ -60,7 +59,7 @@ aside#picture {
 	width: 13%;
 	margin-right: 80px;
 	padding: 0px;
-	background-color: rgba(255, 255, 255, 0.6)
+	opacity: 1.0;
 	border-radius: 80px;
 	border: 2px solid aliceblue;
 }
@@ -93,5 +92,4 @@ img {
 
 article {
 	color: black;
-	background-color: rgba(255, 255, 255, 0.6);
 }
