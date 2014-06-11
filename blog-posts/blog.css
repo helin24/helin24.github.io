@@ -55,7 +55,7 @@ aside#picture {
 	margin-right: 80px;
 	padding: 0px;
 	opacity: 1.0;
-	border-radius: 100px;
+	border-radius: 80px;
 	border: 2px solid white;
 }
 
@@ -65,7 +65,7 @@ footer {
 	margin: 15px;
 	padding: 10px;
 	color: white;
-	border: 2px solid white;
+	border: 2px solid aliceblue;
 	border-radius: 10px;
 }
 
@@ -80,6 +80,6 @@ a:hover {
 img {
 	max-width: 100%;
 	max-height: 100%;
-	border-radius: 100px;
+	border-radius: 80px;
 	opacity: 1.0;
 }
