@@ -3,8 +3,9 @@
 }
 
 body {
-	background-image: url('https://cloud.githubusercontent.com/assets/6379305/3246560/b5708d30-f17c-11e3-98cf-9ed0ed915fd6.JPG');
+	background-image: url('https://cloud.githubusercontent.com/assets/6379305/3246677/b252921e-f17d-11e3-943a-4305cfc4b0cb.JPG');
 	background-size: 100%;
+	background-attachment: fixed;
 }
 
 header {
