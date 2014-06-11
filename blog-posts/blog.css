@@ -1,0 +1,49 @@
+.* {
+	font-style: arial;
+}
+
+header {
+	float: left;
+	width: 90%;
+	font-size: 26;
+	font-weight: bold;
+	color: darkred;
+	border-bottom-color: black;
+	border-bottom-width: 2px;
+}
+
+section {
+	float: left;
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+	opacity: 0.6;
+	background-color: white;
+	padding: 10px;
+}
+
+h2 {
+	color: firebrick;
+}
+
+p {
+	color: firebrick;
+}
+
+aside {
+	float: right;
+	width: 30%;
+	margin-left: auto;
+	margin-right: auto;
+	opacity: 0.6;
+	background-color: white;
+	padding: 10px;
+}
+
+footer {
+	float: left;
+	width: 90%;
+	margin: auto;
+	padding: 10px;
+	color: white;
+}
