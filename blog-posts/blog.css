@@ -2,6 +2,10 @@
 	font-style: arial;
 }
 
+body {
+	background-image: url('blog-posts/images/vermont.jpg');
+}
+
 header {
 	float: left;
 	width: 90%;
