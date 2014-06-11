@@ -82,6 +82,7 @@ img {
 	max-height: 100%;
 	border-radius: 80px;
 	opacity: 1.0;
+	vertical-align: center;
 }
 
 article {
