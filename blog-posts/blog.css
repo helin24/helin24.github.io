@@ -1,3 +1,9 @@
+/* Further adjustments:
+Try rgba for opacity on pictures
+Try to make background fixed size and maximum width so that
+larger browser size will not cause stretched page
+*/
+
 * {
 	font-family: "verdana", sans-serif;
 }
