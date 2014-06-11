@@ -82,10 +82,14 @@ a:hover {
 	color:lightskyblue;
 }
 
-img {
+
+img#profile {
 	max-width: 100%;
 	max-height: 100%;
-	border-radius: 80px;
+	border-radius: 80px;/*not sure about centering images */
+}
+
+img {
 	opacity: 1.0;
 	vertical-align: center; /*not sure about centering images */
 }
