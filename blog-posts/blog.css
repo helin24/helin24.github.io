@@ -55,6 +55,8 @@ aside#picture {
 	margin-right: 50px;
 	padding: 0px;
 	opacity: 1.0;
+	border-radius: 30px;
+	border-color: white;
 }
 
 footer {
@@ -78,6 +80,6 @@ a:hover {
 img {
 	max-width: 100%;
 	max-height: 100%;
-	border-radius: 10px;
+	border-radius: 30px;
 	opacity: 1.0;
 }
