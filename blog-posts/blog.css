@@ -52,8 +52,9 @@ aside {
 
 aside#picture {
 	width: 20%;
-	margin-left: 50px;
+	margin-right: 50px;
 	padding: 0px;
+	opacity: 1.0;
 }
 
 footer {
