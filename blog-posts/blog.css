@@ -134,6 +134,10 @@ img {
 	background-attachment: fixed;
 	}
 
+	img {
+		max-width: 93%;
+	}
+
 }
 
 
