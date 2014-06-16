@@ -1,0 +1,32 @@
+
+.test {
+	display: inline-block;
+	border: 1px solid black;
+	font-size: 48px;
+	width: 300px;
+	height: 150px;
+	margin: 10px;
+	vertical-align: top;
+}
+
+
+/*
+.test {
+	display: inline-block;
+	border: 1px solid black;
+	font-size: 48px;
+	width: 300px;
+}
+
+
+.test {
+	display: block;
+	border: 1px solid black;
+	font-size: 48px;
+	width: 300px;
+	height: 150px;
+	margin: 10px;
+	vertical-align: top;
+}
+
+*/

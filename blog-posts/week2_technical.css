@@ -1,0 +1,15 @@
+.demo {
+	margin-left: 10px;
+}
+
+.exhibit {
+	display: inline-block;
+	margin: 2px;
+	min-width: 250px;
+	width: 30%;
+	vertical-align: top;
+}
+
+.exhibit img {
+	width: 100%;
+}

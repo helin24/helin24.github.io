@@ -15,6 +15,22 @@ body {
 	width: 1366px;
 }
 
+h2 {
+	color: darkblue;
+}
+
+p {
+	color: black
+}
+
+a {
+	color: rgb(28, 132, 202);
+}
+
+a:hover {
+	color: rgb(241, 140, 108);
+}
+
 header {
 	float: left;
 	width: 90%;
@@ -37,13 +53,10 @@ section {
 	border-radius: 10px;
 }	
 
-h2 {
-	color: darkblue;
+article {
+	color: black;
 }
 
-p {
-	color: black
-}
 
 aside {
 	float: right;
@@ -75,14 +88,6 @@ footer {
 	border-radius: 10px;
 }
 
-a {
-	color: rgb(28, 132, 202);
-}
-
-a:hover {
-	color: rgb(241, 140, 108);
-}
-
 
 img#profile {
 	max-width: 100%;
@@ -93,8 +98,4 @@ img#profile {
 img {
 	opacity: 1.0;
 	vertical-align: center; /*not sure about centering images */
-}
-
-article {
-	color: black;
 }

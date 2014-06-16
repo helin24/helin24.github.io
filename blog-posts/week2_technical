@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Blog title</title>
+	<link rel="stylesheet" type="text/css" href="http://helin24.github.io/blog-posts/blog.css">
+</head>
+<body>
+
+<header>Inline vs. Inline Blocks</header>
+
+<section>
+	<article>
+		<h3>Inline vs. Inline Blocks</h3>
+		<h4>06/15/14</h4>
+		
+		<p>Text here </p>
+
+		<div class="demonstration"
+
+		Inline elements are meant to span horizontally
+		Respect left and right margins and padding, but do not respect top & bottom margins and padding 
+		Cannot have width and height set
+		Other elements can sit to left and right
+
+		Block elements are meant to stack vertically
+		Respect all margins and padding
+		Force a line break after element
+
+		Inline-blocks combine these two others
+		Respect all margins and padding
+		Width and height can be set
+		Other elements can sit to left and right
+
+
+		Initial display of same text in boxes for these three
+
+		Show what happens when margins and padding specified
+
+		Show what happens when height, width specified
+
+
+
+	</article>
+</section>
+
+<aside id="picture">
+	<img src="https://cloud.githubusercontent.com/assets/6379305/3247393/dc8a96c0-f183-11e3-9b8a-64efe8b5fcf2.jpg" id="profile">
+</aside>
+
+<aside>
+	<a href="http://helin24.github.io">Home</a><br>
+	<a href="http://helin24.github.io/blog-posts/week1_technical.html">Technical</a> <br>
+	<a href="http://helin24.github.io/blog-posts/week1_cultural.html">Cultural </a><br>
+	<a href="http://helin24.github.io/unit1_projects/wireframe_sites.html">Wireframing</a>
+</aside>
+
+<footer>
+	Helin Shiah 2014 <br>
+	<a href="mailto:helin.shiah@gmail.com">Contact me</a>
+</footer>
+
+</body>
+</html>
+

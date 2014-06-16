@@ -1,0 +1,133 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Inline vs. Inline Blocks</title>
+	<link rel="stylesheet" type="text/css" href="http://helin24.github.io/blog-posts/blog.css">
+	<link rel="stylesheet" type="text/css" href="week2_technical.css">
+</head>
+<body>
+
+<header>Inline vs. Inline Blocks</header>
+
+<section>
+	<article>
+		<h3>Inline vs. Inline Blocks</h3>
+		<h4>06/15/14</h4>
+		
+		<p>In working with HTML and CSS, we spend much of our time considering rectangles of content and where to place them - whether it is rectangles in a row, in a column, in a grid with wide spaces between, and many other concerns. The distinctions between inline and inline-block elements become important because these properties determine whether a rectangle can be placed in a row, whether we can control spacing between rectangles, etc.</p> 
+		<p>To understand the difference between inline elements and inline-block elements, it's necessary to also understand block elements. Below I've pasted the code for an element with a black border, where I've varied the display: property with the values "inline," "block," and "inline-block." </p>
+
+		<div class="demo">
+			<img src="images/simple css.png">
+		</div>
+
+		<div class="exhibit">
+			inline <br>
+			<img src="images/inline.png">
+		</div>
+
+		<div class="exhibit">
+			block<br>
+			<img src="images/block.png">
+		</div>
+
+		<div class="exhibit">
+			inline-block<br>
+			<img src="images/inline-block.png">
+		</div>
+
+		<p>We see that inline elements behave like text, with many occupying one horizontal line, while the block elements are vertically stacked, allowing only one element per line. In this situation, inline-block elements are very similar to inline elements, with the exception that text which has come up against the limits of the browser window will cause the entire block to be bumped to the next row (rather than "slightly longer display text" being split up into two lines).</p>
+
+		<p>Next, we compare the behavior of these three elements when provided a specific width.<p>
+
+		<div class="demo">
+			<img src="images/width css.png">
+		</div>
+
+		<div class="exhibit">
+			inline <br>
+			<img src="images/fixed w inline.png">
+		</div>
+
+		<div class="exhibit">
+			block<br>
+			<img src="images/fixed w block.png">
+		</div>
+
+		<div class="exhibit">
+			inline-block<br>
+			<img src="images/fixed w inline-block.png">
+		</div>
+
+		<p>Here, we note that adding a fixed width has changed the appearance of the block and the inline-block, reducing their width and forcing text to the next line if necessary. Note that even with a width that is less than half of the browser size, the block elements each occupy independent lines. Inline elements do not respect height and width specifications, so no change is visible from the previous version - the elements continue to behave like text, hugging whatever is contained within.</p>
+
+		<p>Finally, we consider the effect of fixing height and adding margins.</p>
+
+		<div class="demo">
+			<img src="images/margin css.png">
+		</div>
+
+		<div class="exhibit">
+			inline <br>
+			<img src="images/margin inline.png">
+		</div>
+
+		<div class="exhibit">
+			block<br>
+			<img src="images/margin block.png">
+		</div>
+
+		<div class="exhibit">
+			inline-block<br>
+			<img src="images/margin inline-block.png">
+		</div>
+
+		<p>The inline elements now have wider margins horizontally, creating more space between elements within each line. However, the height specification does not affect the vertical size of the elements and no vertical margins have been inserted. This is not the case for the block and inline-block elements, which are now the same size and have uniform margins along all sides.</p>
+
+		<h4>Summary</h4>
+		<p>The distinctions between inline, block, and inline-block are useful to know while organizing custom divs, but also while using elements that naturally include these display properties.</p>
+
+		<ul>Inline</ul>
+		<li>Span horizontally (other elements can sit to left and right)</li>
+		<li>By default width is as long as needed</li>
+		<li>Respect left and right margins and padding, but not top and bottom</li>
+		<li>Cannot set height and width</li>
+		<li>Examples of inline elements: a, span, b, i 
+		
+		<ul>Block</ul>
+		<li>Forces a line break after each element (does not allow other elements to sit to left and right)</li>
+		<li>By default width is full line</li>
+		<li>Respects all margins and padding</li>
+		<li>Can set height and width</li>
+		<li>Exmaples of block elements: p, div, header, nav, ul, li
+
+		<ul>Inline-block</ul>
+		<li>Can have elements to left and right (shares trait with inline)</li>
+		<li>By default width is as long as needed (shares trait with inline)</li>
+		<li>Respects all margins and padding (shares trait with block)</li>
+		<li>Can set height and width (shares trait with block)</li>
+
+	</article>
+</section>
+
+<aside id="picture">
+	<img src="https://cloud.githubusercontent.com/assets/6379305/3247393/dc8a96c0-f183-11e3-9b8a-64efe8b5fcf2.jpg" id="profile">
+</aside>
+
+<aside>
+	<a href="http://helin24.github.io">Home</a><br><br>
+	<a href="http://helin24.github.io/blog-posts/week1_technical.html">Technical Week 1</a> <br>
+	<a href="http://helin24.github.io/blog-posts/week2_technical.html">Technical Week 2</a> <br><br>
+	<a href="http://helin24.github.io/blog-posts/week1_cultural.html">Cultural Week 1</a><br><br>
+	<a href="http://helin24.github.io/unit1_projects/wireframe_sites.html">Wireframing</a>
+</aside>
+
+<footer>
+	Helin Shiah 2014 <br>
+	<a href="mailto:helin.shiah@gmail.com">Contact me</a>
+</footer>
+
+</body>
+</html>
+
