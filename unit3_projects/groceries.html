@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<!-- Should show list all the time
+If item added display new list -->
+
+	<p>My grocery list</p>
+
+	<form id="add" action="groceries.asp">
+		Add item: <input type="text" name="addItem">
+		<input type="submit" value="Add">
+		<br>
+
+<!-- 		Remove item: <input type="text" name="remove">
+		<button type="button" onclick="groceryList.remove("remove")">Remove</button>
+ -->	</form>
+
+	<button type="button" onclick="add()">View</button>
+
+	<p>Grocery List:</p>
+	<p id="groceryList"></p>
+
+	<script>
+		var groceryList = {}
+		// groceryList.add = function() {
+		// 	var addItem = document.getElementById("add");
+		// 	groceryList[addItem.elements[0].value] = false
+		// 	document.getElementById("groceryList").innerHTML = groceryList
+		// }
+
+		function add() {
+			var x = document.getElementById("add");
+			var y = x.elements[0].value;
+			// groceryList[y] = false
+			document.getElementById("groceryList").innerHTML = y;
+		}
+
+		groceryList.remove = function(item) {
+			delete groceryList[item]
+		}
+
+		groceryList.buy = function(item) {
+			groceryList[item] = true
+		}
+
+		groceryList.done = function() {
+			done = true
+			for (key in groceryList) {
+				groceryList[key] == false && done = false
+			}
+			return done
+		}
+
+	</script>
+
+</body>
+</html> 
