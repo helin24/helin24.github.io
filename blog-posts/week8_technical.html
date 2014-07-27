@@ -27,7 +27,9 @@
 		<h4>07/27/14</h4>
 		
 		<p>
-			In mathematics, Big O notation describes how a function acts when approaching a specific value or when approaching infinity, by stating a simplified function whose growth rate will be just higher than the growth rate of the original function.
+			In mathematics, Big O notation describes how a function acts when approaching a specific value or when approaching infinity, by stating a simplified function whose growth rate will be just higher than the growth rate of the original function.<br><br>For example, as x approaches infinity in the expression to the left, only the x<sup>4</sup> term will be relevant; the terms will become negligible in comparison. Therefore, we can say that the expression is limited to being less than the final term on the right:<br>
+			<img src="http://upload.wikimedia.org/math/a/6/3/a632fa2f12bc713c2b6060629563c3c2.png">
+			<br>In Big-O notation, we can say that the left side expression is a "big-oh" of (x<sup>4</sup>). Note that the constant is not relevant - we just want to know that the expression will be the same shape as x<sup>4</sup>.
 		</p>
 		<p>
 			In computer science, Big O notation is used to describe the average and maximum amount of time needed for an algorithm to run. The time required is proportional to the number of basic operations performed - examples of basic operations are one arithmetic operation (e.g. 2+3), one variable assignment (e.g. x=3), one test (x == 1), one read, or one write. The concept of Big O notation can be understood through an example of a simple algorithm.
@@ -38,11 +40,13 @@
 		<p>
 			Another solution is to use a binary search algorithm, which requires a sorted array. Instead of starting by checking the first element, though, the binary search algorithm compares the middle element to the target value. If the middle element is smaller(larger), the algorithm then checks the element halfway between the middle element and the end(beginning) of the array. This process is repeated until the target value is found or the algorithm finds that there are two adjacent elements that would sandwich the target value but the target value is not present. This algorithm is an improvement over the solution that iterates over all of the array elements, because the worst case number of basic operations (individual tests) is equal to log(n) (log base 2). For example, if you have an array of 64 elements, you can split it in half at most 6 times (2^6 is 64). 
  		</p>
-<!--  	
-	http://en.wikipedia.org/wiki/Big_O_notation
-	http://bigocheatsheet.com/
-	http://web.mit.edu/16.070/www/lecture/big_o.pdf
- -->
+		<p>
+		<ul>Links:
+			<li><a href="http://en.wikipedia.org/wiki/Big_O_notation">http://en.wikipedia.org/wiki/Big_O_notation</a></li>
+			<li><a href="http://web.mit.edu/16.070/www/lecture/big_o.pdf">http://web.mit.edu/16.070/www/lecture/big_o.pdf</a></li>
+			<li><a href="http://bigocheatsheet.com/">http://bigocheatsheet.com</a></li>
+		</ul>
+		</p>
 	</article>
 </section>
 
