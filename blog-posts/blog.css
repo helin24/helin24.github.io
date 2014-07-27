@@ -9,6 +9,66 @@ larger browser size will not cause stretched page
 	font-family: "verdana", sans-serif;
 }
 
+@font-face {
+	font-family: 'icomoon';
+	src:url('fonts/icomoon.eot?-ux0ql4');
+	src:url('fonts/icomoon.eot?#iefix-ux0ql4') format('embedded-opentype'),
+		url('fonts/icomoon.woff?-ux0ql4') format('woff'),
+		url('fonts/icomoon.ttf?-ux0ql4') format('truetype'),
+		url('fonts/icomoon.svg?-ux0ql4#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+/*class^="icon-" selects anything that starts with "icon" and class*=" icon-" selects anything that includes " icon"*/ 
+
+p#links {
+	float: right;
+	width: 3%;
+	margin: 1% 16% 0% 0%;
+	font-color: black;
+	font-size: 31px;
+	text-decoration: none;	
+}
+
+a.icon{
+	color: darkblue;
+	text-decoration: none;
+}
+
+.icon-github:before {
+	content: "\e605";
+}
+.icon-mail:before {
+	content: "\e601";
+}
+.icon-twitter:before {
+	content: "\e602";
+}
+.icon-facebook:before {
+	content: "\e600";
+}
+.icon-googleplus:before {
+	content: "\e603";
+}
+.icon-linkedin:before {
+	content: "\e604";
+}
+
 body {
 	background-image: url('https://cloud.githubusercontent.com/assets/6379305/3246677/b252921e-f17d-11e3-943a-4305cfc4b0cb.JPG');
 	background-size: auto 100%;
@@ -25,6 +85,7 @@ p {
 
 a {
 	color: rgb(28, 132, 202);
+
 }
 
 a:hover {
@@ -61,7 +122,7 @@ article {
 aside {
 	float: right;
 	width: 17%;
-	margin: 1% 14% 0% .1%;
+	margin: 1% 14% 2% .1%;
 	margin-left: .5%;
 	opacity: 0.85;
 	background-color: white;
@@ -72,28 +133,17 @@ aside {
 
 aside#picture {
 	width: 13%;
-	margin: 1% 18% 0% 0%;
+	margin: 1% 2% 0% 0%;
 	padding: 0px;
 	opacity: 1.0;
 	border-radius: 80px;
 	border: 1px solid aliceblue;
 }
 
-footer {
-	float: left;
-	width: 75%;
-	margin: 2% 10% 2% 10%;
-	padding: 10px;
-	color: white;
-	border: 2px solid white;
-	border-radius: 10px;
-}
-
-
 img#profile {
 	max-width: 100%;
 	max-height: 100%;
-	border-radius: 80px;/*not sure about centering images */
+	border-radius: 80px;/*not sure about centering images 
 }
 
 img {
@@ -123,10 +173,6 @@ img {
 	section {
 		width: 93%;
 		margin: 1%;
-	}
-
-	footer {
-		width: 93%;
 	}
 
 	body {
