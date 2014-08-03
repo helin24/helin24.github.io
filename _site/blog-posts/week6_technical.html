@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Classes vs. Modules</title>
+	<script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
+	<link rel="stylesheet" type="text/css" href="http://helin24.github.io/blog-posts/blog.css">
+
+</head>
+<body>
+
+<header>Technical Blog</header>
+
+<section>
+	<article>
+		<h3>Classes vs. Modules: A Grammar Lesson</h3>
+		<h4>07/11/14</h4>
+		
+		<p>
+			Classes are nouns, and modules are adjectives. This is an easy way to think about classes and modules and when to use them.
+		</p>
+		<p>
+			First, let's review how classes and modules are similar. Both can store methods that can be called by objects, and thus both provide a way to reduce repetition in creating Ruby objects. Variables and constants can be used in both classes and modules, and can be accessed between the two. The syntax for writing classes and modules are also similar:
+
+			<pre class = "prettyprint">
+	class MyClass
+		def class_method
+			# Method here
+		end
+	end
+
+	module MyModule
+		def module_method
+			# Method here
+		end
+	end
+			</pre>
+		</p>
+		<p>
+			Considering nouns and adjectives is a good way to remember that a class can only inherit methods from one class, but can include methods from many modules. For example, a frog (object instance of Frog class) can be thought of as a loveable (module), transformable (module), edible (module, but blegh) Amphibian (superclass). The modules provide methods that cause a frog to be accurately described by all three adjectives, but it makes less sense if we try to make these adjectives nouns and claim that a frog IS a loveable, a transformable, or an edible. In most cases, an efficient categorization of frogs would group them together with toads and salamanders under the class of amphibians rather than grouping them with other things that are edible.
+		</p>
+		<p>
+			Adjectives are attributed to certain things, rather than being things. This is analogous to object instantiation. We can create instances of classes, e.g. creating an object named "Froggy the Frog" which is an instance of the Frog class, but we cannot create instances of modules. Instead, we include modules into our definitions of classes. 
+		</p>
+		<p> Below is code for the class Amphibian, which is created with a name and a method to swim. We also create the class Frog, which inherits all of the methods from the class Amphibian using Frog &lt; Amphibian. However, we also include the module "Transformable" for the Frog class, which applies only to Frogs and not to all Amphibians. This module includes a method to provide different growth stages to any object that is transformable, a method to return an object's current stage, and a method that grows an object.
+			<pre class = "prettyprint">
+	module Transformable
+
+		def set_stages(stages)
+			@stages = stages
+			@currentStage = 0
+		end
+
+		def get_stage
+			puts "#{name} is in #{@stages[@currentStage]} stage"
+		end
+
+		def grow
+			@currentStage += 1
+			get_stage
+		end
+
+	end
+
+	class Amphibian
+		attr_reader :name 
+
+		def initialize(name, poisonous)
+			@name = name
+			@poisonous = poisonous
+		end
+
+		def swim
+			puts "#{@name} is swimming."
+			puts "Watch out, #{@name} is poisonous" if @poisonous
+		end
+
+	end
+
+	class Frog < Amphibian
+		include Transformable
+	end
+			</pre>
+			The result is that when we create an instance of Frog, we are able to call the class method (swim) as well as assign different growth stages and grow the object, which are methods from the Transformable module:
+			<pre class = "prettyprint">
+	frog1 = Frog.new("Froggy the Frog", false)
+	frog1.set_stages(%w(egg tadpole froglet frog))
+	frog1.get_stage # => "Froggy the Frog is in egg stage"
+	frog1.grow # => "Froggy the Frog is in tadpole stage"
+	frog1.swim # => "Froggy the Frog is swimming."
+			</pre>
+
+			At this point it may be unclear why we would write a separate module instead of giving the Frog class or the Amphibian class the methods to store stages and grow. To clarify this, we can reuse our Transformable module on another creature that is transformable. Below we create a class Insect, which has a method to move rather than swim. We also create a moth class that inherits from insect.
+
+			<pre class = "prettyprint">
+	class Insect
+		attr_reader :name 
+
+		def initialize(name, pest)
+			@name = name
+			@pest = pest
+		end
+
+		def move
+			@pest ? (puts "Catch #{@name}!") : (puts "Isn't #{@name} cute?")
+		end
+	end
+
+	class Moth < Insect
+		include Transformable
+	end				
+			</pre>
+
+			Like the Frog class, the Moth class is also Transformable, having many stages, and including the Transformable module allows us to call the same methods on an instance of the Moth class, even though moths and frogs do not belong to the same immediate superclass. 
+			<pre class = "prettyprint">
+	moth1 = Moth.new("Mothy the Moth", true)
+	moth1.set_stages(%w(egg larva pupae moth))
+	moth1.grow # => "Mothy the Moth is in larva stage."
+	moth1.move # => "Catch Mothy the Moth!"
+			</pre>
+		</p>
+		<p>
+			In summary, understanding classes and modules allows us to be more efficient with how we pull in methods when we create new classes. A new class can only inherit from one other class directly, so we want that superclass to be the best category and to have the most useful initialization method for the new class. Multiple modules can be thrown into a new class, so these modules can each be descriptive of the class, and modules can be used for a number of classes that aren't from the same category. 
+		</p>
+	</article>
+</section>
+
+<aside id="picture">
+	<img src="https://cloud.githubusercontent.com/assets/6379305/3247393/dc8a96c0-f183-11e3-9b8a-64efe8b5fcf2.jpg" id="profile">
+</aside>
+
+<aside>
+	<a href="http://helin24.github.io">Home</a><br><br>
+	<a href="http://helin24.github.io/blog-posts/week1_technical.html">Technical Week 1</a> <br>
+	<a href="http://helin24.github.io/blog-posts/week2_technical.html">Technical Week 2</a> <br>
+	<a href="http://helin24.github.io/blog-posts/week3_technical.html">Technical Week 3</a> <br>
+	<a href="http://helin24.github.io/blog-posts/week4_technical.html">Technical Week 4</a> <br>
+	<a href="http://helin24.github.io/blog-posts/week5_technical.html">Technical Week 5</a> <br>
+	<a href="http://helin24.github.io/blog-posts/week6_technical.html">Technical Week 6</a> <br>
+	<a href="http://helin24.github.io/blog-posts/week7_technical.html">Technical Week 7</a> <br><br>	
+	<a href="http://helin24.github.io/blog-posts/week1_cultural.html">Cultural Week 1</a><br>
+	<a href="http://helin24.github.io/blog-posts/week3_cultural.html">Cultural Week 3</a><br>
+	<a href="http://helin24.github.io/blog-posts/week4_cultural.html">Cultural Week 4</a><br>
+	<a href="http://helin24.github.io/blog-posts/week5_cultural.html">Cultural Week 5</a><br>
+	<a href="http://helin24.github.io/blog-posts/week6_cultural.html">Cultural Week 6</a><br>
+	<a href="http://helin24.github.io/blog-posts/week7_cultural.html">Cultural Week 7</a><br><br>
+	<a href="http://helin24.github.io/unit1_projects/wireframe_sites.html">Wireframing Sites</a><br>
+	<a href="http://helin24.github.io/unit1_projects/my_wireframe.html">Wireframing My Site</a>
+</aside>
+
+<footer>
+	Helin Shiah 2014 <br>
+	<a href="mailto:helin.shiah@gmail.com">Contact me</a>
+</footer>
+
+</body>
+</html>

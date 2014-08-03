@@ -1,0 +1,26 @@
+/*
+Link file to html file using external method
+Add colors, background colors or fonts to different parts of the page
+Use ids and classes to change specific elements
+*/
+
+.narrative {
+	color: green;
+}
+
+#contact {
+	color: blue;
+}
+
+h1 {
+	letter-spacing: 2px;
+	color: darkblue;
+}
+
+#main {
+	width: 70%;
+	margin: auto;
+	padding: 10px;
+	background: gray;
+	border: 2px solid green;
+}

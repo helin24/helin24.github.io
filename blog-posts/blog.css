@@ -10,6 +10,112 @@ larger browser size will not cause stretched page
 }
 
 @font-face {
+	font-family: kaushan;
+	src: url('../KaushanScript-Regular.otf');
+}
+
+body {
+	background-image: url('https://cloud.githubusercontent.com/assets/6379305/3246677/b252921e-f17d-11e3-943a-4305cfc4b0cb.JPG');
+	background-size: auto 100%;
+	background-attachment: fixed;
+}
+
+h2 {
+	color: darkblue;
+}
+
+p {
+	color: black
+}
+
+a {
+	color: rgb(28, 132, 202);
+	text-decoration: none;
+}
+
+a:hover {
+	color: rgb(241, 140, 108);
+}
+
+header {
+	float: left;
+	width: 75%;
+	margin: 1% 10% 2% 10%;
+	font-size: 48px;
+	font-weight: bold;
+	color: darkblue;
+	padding: 2px;
+	position: fixed;
+	font-family: kaushan;
+}
+
+li {
+	display: inline-block;
+	font-weight: normal;
+}
+
+li.level1 {
+	display: inline-block;
+	vertical-align: top;
+	width: auto;
+	text-align: center;
+	cursor: pointer;
+	font-weight: bold;
+	border-radius: 10px	
+}
+
+div.group {
+	display: inline-block;
+	padding: 5px 10px 5px 10px;	
+}
+
+div#menu {
+	position: fixed;
+	margin-left: 45%;
+	margin-top: 20px;
+	z-index: 99;
+}
+
+
+li.level1 ul {
+	padding: 2px;
+	padding-bottom: 5px;
+}
+
+li.sub {
+	display: block;
+	visibility: hidden;
+	width: inherit;
+	text-align: center;
+}
+
+section {
+	position: relative;
+	float: right;
+	width: 55%;
+	margin: 10% 2% 2% 0%;
+	background-color: rgba(255, 255, 255, 0.85);
+	padding: 2%;
+	border-radius: 10px;
+	border: 1px solid rgb(255, 147, 0);
+	z-index: 50;
+	overflow: auto;
+}	
+
+section#about {
+	visibility: hidden;
+}
+
+article {
+	color: black;
+}
+
+img {
+	opacity: 1.0;
+	vertical-align: center; /*not sure about centering images */
+}
+
+@font-face {
 	font-family: 'icomoon';
 	src:url('fonts/icomoon.eot?-ux0ql4');
 	src:url('fonts/icomoon.eot?#iefix-ux0ql4') format('embedded-opentype'),
@@ -37,17 +143,23 @@ larger browser size will not cause stretched page
 /*class^="icon-" selects anything that starts with "icon" and class*=" icon-" selects anything that includes " icon"*/ 
 
 p#links {
-	float: right;
-	width: 3%;
-	margin: 1% 16% 0% 0%;
+	position: fixed;
+	width: 20%;
+	margin: 6% 0% 0% 10%;
 	font-color: black;
-	font-size: 31px;
-	text-decoration: none;	
+	font-size: 24px;
+	text-decoration: none;
+	padding: 3px;	
 }
+
 
 a.icon{
 	color: darkblue;
 	text-decoration: none;
+}
+
+a.icon:hover {
+	color: rgb(241, 140, 108);
 }
 
 .icon-github:before {
@@ -69,88 +181,6 @@ a.icon{
 	content: "\e604";
 }
 
-body {
-	background-image: url('https://cloud.githubusercontent.com/assets/6379305/3246677/b252921e-f17d-11e3-943a-4305cfc4b0cb.JPG');
-	background-size: auto 100%;
-	background-attachment: fixed;
-}
-
-h2 {
-	color: darkblue;
-}
-
-p {
-	color: black
-}
-
-a {
-	color: rgb(28, 132, 202);
-
-}
-
-a:hover {
-	color: rgb(241, 140, 108);
-}
-
-header {
-	float: left;
-	width: 75%;
-	margin: 2% 10% 2% 10%;
-	font-size: 48px;
-	font-weight: bold;
-	color: darkblue;
-	border-bottom: 2px solid darkblue;
-	border-top: 2px solid darkblue;
-	padding: 8px;
-}
-
-section {
-	float: left;
-	width: 50%;
-	margin: 0% .1% 2% 10%;
-	background-color: rgba(255, 255, 255, 0.85);
-	padding: 2%;
-	border-radius: 10px;
-	border: 1px solid rgb(255, 147, 0);
-}	
-
-article {
-	color: black;
-}
-
-
-aside {
-	float: right;
-	width: 17%;
-	margin: 1% 14% 2% .1%;
-	margin-left: .5%;
-	opacity: 0.85;
-	background-color: white;
-	padding: 2%;
-	border-radius: 10px;
-	border: 1px solid rgb(255, 147, 0);
-}
-
-aside#picture {
-	width: 13%;
-	margin: 1% 2% 0% 0%;
-	padding: 0px;
-	opacity: 1.0;
-	border-radius: 80px;
-	border: 1px solid aliceblue;
-}
-
-img#profile {
-	max-width: 100%;
-	max-height: 100%;
-	border-radius: 80px;/*not sure about centering images 
-}
-
-img {
-	opacity: 1.0;
-	vertical-align: center; /*not sure about centering images */
-}
-
 @media (min-aspect-ratio: 4448/2236) {
 	body {
 		background-size: 100% auto;
@@ -158,17 +188,6 @@ img {
 }
 
 @media (max-width: 760px) {
-	aside {
-		float: left;
-		width: 93%;
-		margin: 1%;
-	}
-
-	aside#picture {
-		max-width: 160px;
-		width: 50%;
-		margin-left: 35%;
-	}
 
 	section {
 		width: 93%;

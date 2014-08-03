@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<form id="groceries" action="action.asp">
+	Add item: <input type="text" name="add" value="apple"><br>
+	Remove item: <input type="text"><br>
+	Buy item: <input type="text">
+</form> 
+
+<button onclick="groceryList.refresh()">Refresh</button>
+
+<p>Grocery List:</p>
+<p id="list"></p>
+<script>
+
+var groceryList = {}
+
+groceryList.display = function() {
+	var text = ""
+	for (key in groceryList) {
+		if (typeof(groceryList[key]) != "function") {
+			text += "<br>" + key
+			if (groceryList[key] == true) {text += " [x]"}
+		}
+	}
+	document.getElementById("list").innerHTML = text
+}
+
+groceryList.add = function(item) {
+	if(item != "") {groceryList[item] = false}
+}
+
+groceryList.remove = function(item) {
+	if(item != "") {delete groceryList[item]}
+}
+
+groceryList.buy = function(item) {
+	if(item != "") {groceryList[item] = true}
+}
+
+groceryList.refresh = function() {
+	var changes = document.getElementById("groceries")
+	groceryList.add(changes.elements[0].value)
+	groceryList.remove(changes.elements[1].value)
+	groceryList.buy(changes.elements[2].value)
+	groceryList.display()
+}
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Inquiring Well</title>
+	<link rel="stylesheet" type="text/css" href="blog.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="script.js" type="text/javascript"></script>
+</head>
+<body>
+
+<header>Cultural Blog</header>
+
+<div id="menu">
+	<ul>
+		<li class="level1" id="home"><a href="../index.html"><div class="group">Home</div></a></li>
+		<li class="level1" id="about"><a href="../index.html"><div class="group">About</div></a></li>
+		<li class="level1"><a href=""><div class="group">Cultural Blog</div></a>
+			<ul style="list-style: none;">
+				<li class="sub"><span><a href="week1_cultural.html">Week 1</a></span></li>
+				<li class="sub"><span><a href="week3_cultural.html">Week 3</a></span></li>
+				<li class="sub"><span><a href="week4_cultural.html">Week 4</a></span></li>
+				<li class="sub"><span><a href="week5_cultural.html">Week 5</a></span></li>
+				<li class="sub"><span><a href="week6_cultural.html">Week 6</a></span></li>
+				<li class="sub"><span><a href="week7_cultural.html">Week 7</a></span></li>
+				<li class="sub"><span><a href="week8_cultural.html">Week 8</a></span></li>
+				<li class="sub"><span><a href="week9_cultural.html">Week 9</a></span></li>
+			</ul>
+		</li>
+		<li class="level1"><a href=""><div class="group">Technical Blog</div></a>
+			<ul>
+				<li class="sub"><span><a href="week1_technical.html">Week 1</a></span></li>
+				<li class="sub"><span><a href="week2_technical.html">Week 2</a></span></li>
+				<li class="sub"><span><a href="week3_technical.html">Week 3</a></span></li>
+				<li class="sub"><span><a href="week4_technical.html">Week 4</a></span></li>
+				<li class="sub"><span><a href="week5_technical.html">Week 5</a></span></li>
+				<li class="sub"><span><a href="week6_technical.html">Week 6</a></span></li>
+				<li class="sub"><span><a href="week7_technical.html">Week 7</a></span></li>	
+				<li class="sub"><span><a href="week8_technical.html">Week 8</a></span></li>	
+			</ul>
+		</li>
+		<li class="level1"><a href=""><div class="group">Other Projects</div></a>
+			<ul>
+				<li class="sub"><span><a href="../unit1_projects/wireframe_sites.html">Wireframing Sites</a></span></li>
+				<li class="sub"><span><a href="../unit1_projects/my_wireframe.html">Wireframing My Site</a></span></li>
+			</ul>
+		</li>
+	</ul>
+</div>
+
+<p id="links">
+	<a href="mailto:helin.shiah@gmail.com" class="icon"><span class="icon-mail"></span></a>
+	<a href="https://github.com/helin24" class="icon"><span class="icon-github"></span></a>
+	<a href="https://www.linkedin.com/in/helinshiah/" class="icon"><span class="icon-linkedin"></span></a>
+	<a href="https://plus.google.com/+HelinShiah" class="icon"><span class="icon-googleplus"></span></a>
+	<a href="https://www.facebook.com/helin.shiah" class="icon"><span class="icon-facebook"></span></a>
+	<a href="https://twitter.com/helin_s" class="icon"><span class="icon-twitter"></span></a>
+</p>
+
+<section>
+	<article>
+		<h3>Inquiring Well</h3>
+		<h4>08/01/14</h4>
+		
+		<p>
+			When I was working on fizzbuzz, I tried to implement a version of the solution that created a blank array first using fizzarray = Array.new(num of elements, "") and then pushed in "fizz" if a multiple of 3 was encountered, "buzz" if a multiple of 5 was encountered, and the original number if not a multiple of 3 or 5. I was hoping that this would save me a line of assigning "fizzbuzz" to multiples of 15, however, I encountered the issue that when I pushed a string onto a specific empty string, say calling fizzarray[0] << "fizz", all the elements of fizzarray would concatenate another "fizz" string. This was very peculiar and I had a lot of trouble googling for a solution, because I didn't have distinctive words to describe this problem - I received many results that addressed assigning values to specific elements or assigning values to every element, and none troubleshooting the involuntary assignment of values to every element when intending to assign values to a specific element. Eventually I attended office hours with this question, and even then it took a while to isolate the problem, which was that creating an array with the Array.new command caused every element to refer to the same block, "". Therefore, when I pushed a string onto a specific element, the underlying object was actually changed for every element.
+		</p>
+	</article>
+</section>
+
+</body>
+</html>

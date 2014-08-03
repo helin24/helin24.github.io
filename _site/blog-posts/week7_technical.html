@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SQL vs. NoSQL</title>
+	<link rel="stylesheet" type="text/css" href="http://helin24.github.io/blog-posts/blog.css">
+	<style>
+	.comparison {
+		display: inline-block;
+		border: 1px solid black;
+		vertical-align: top;
+		width: 48%;
+	}
+	</style>
+</head>
+<body>
+
+<header>Technical Blog</header>
+
+<section>
+	<article>
+		<h3>SQL vs. NoSQL</h3>
+		<h4>07/20/14</h4>
+		
+		<p>
+			We've been learning about SQL databases in this week, so we can use this understanding as a base for contrasting NoSQL (stands for Not Only SQL). 
+		</p>
+		<div class = "comparison"><b>SQL is "relational"</b><br>
+			<ul>
+				<li>Table-based</li>
+				<li>Standard schema defined</li>
+				<li>Follows ACID</li>
+				<ul>
+					<li>Atomicity - each transaction is success or failure only</li>
+					<li>Consistency - any transaction brings database from one valid state to another valid state</li>
+					<li>Isolation - transactions execute independently of each other</li>
+					<li>Durability - changes are permanent</li>
+				</ul>
+				<li>Standard query language exists</li>
+				<li>Best used when transactions must be definite</li>
+				<li>Examples include MySQL, Oracle, SQLite</li>
+			</ul>
+		</div>
+		<div class = "comparison"><b>NoSQL is "distributed"</b><br>
+			<ul>
+				<li>Key-value pairs, documents, etc.</li>
+				<li>No standard schema defined</li>
+				<li>Follows BASE</li>
+				<ul>
+					<li>Basically Available - guarantees database is accessible at any time</li>
+					<li>Soft state - state may change over time even without input</li> 
+					<li>Eventual consistency - system will become the same for everyone over time</li> 
+				</ul><br><br>
+				<li>No standard query language</li>
+				<li>Best used when many simple queries and changing structure</li> 
+				<li>Examples include MongoDB, BigTable</li>
+			</ul>
+		</div>
+		<p>
+			The major difference between SQL and NoSQL databases is that SQL is highly structured into a table form, while NoSQL databases can take many forms. This is commonly a key-value structure where each piece of data is a value and a key is assigned to retrive the data later, or a document database where each document has a different collection of fields with information. Each SQL database table thus has a standard schema, where each field is defined to take a certain type of data (e.g. integers, varchar, date) and default values are specified. NoSQL database objects do not have defined schema, and each piece of information can be structurally different.
+		</p>
+		<p>
+			To understand the ACID vs. BASE characterization, it is actually helpful to define one more acronym, CAP. 
+			<ul>
+				<li>Consistency - whether system is fully operational according to established rules</li>
+				<li>Availability - whether system available when requested</li>
+				<li>Partition-tolerance - whether system continues to operate even under circumstances of data loss</li>
+			</ul>
+			The CAP theory states that a database system can only have two out of the three. I'm simplifying here, as there are actually many nuances to how these three acronyms define their component words. However, simplistically, SQL systems are generally not partitioned and tend to fulfill consistency over availability by allowing only a master database to be read and edited. And simplistically, a NoSQL system is partition-tolerant and tends to fulfill availability over consistency, by allowing for "best guesses" based on currently available information since the system may be changing continuously.
+		</p>
+		<p>
+			When would a user prefer either SQL or NoSQL? SQL's consistency and adherence to ACID makes it better for functions like banking and other secured information, because these require precise transactions and accurate answers upon request. SQL is also better for complex queries that consider structured information from many sources. Meanwhile, NoSQL can be useful for web sites that process large numbers of new pieces of information and many queries where a "best guess" answer is adequate. NoSQL may also be a better choice for a business that is growing and changing quickly due to less need for defining structure at initiation.
+ 		</p>
+<!--  		http://www.infoq.com/articles/cap-twelve-years-later-how-the-rules-have-changed
+ 		http://en.wikipedia.org/wiki/CAP_theorem
+ 		http://news.dice.com/2012/07/16/sql-vs-nosql-which-is-better/
+ 		http://www.thegeekstuff.com/2014/01/sql-vs-nosql-db/
+ 		http://www.linuxjournal.com/article/10770?page=0,0
+ 		http://readwrite.com/2013/03/25/when-nosql-databases-are-good-for-you
+ -->
+	</article>
+</section>
+
+<aside id="picture">
+	<img src="https://cloud.githubusercontent.com/assets/6379305/3247393/dc8a96c0-f183-11e3-9b8a-64efe8b5fcf2.jpg" id="profile">
+</aside>
+
+<aside>
+	<a href="http://helin24.github.io">Home</a><br><br>
+	<a href="http://helin24.github.io/blog-posts/week1_technical.html">Technical Week 1</a> <br>
+	<a href="http://helin24.github.io/blog-posts/week2_technical.html">Technical Week 2</a> <br>
+	<a href="http://helin24.github.io/blog-posts/week3_technical.html">Technical Week 3</a> <br>
+	<a href="http://helin24.github.io/blog-posts/week4_technical.html">Technical Week 4</a> <br>
+	<a href="http://helin24.github.io/blog-posts/week5_technical.html">Technical Week 5</a> <br>
+	<a href="http://helin24.github.io/blog-posts/week6_technical.html">Technical Week 6</a> <br>
+	<a href="http://helin24.github.io/blog-posts/week7_technical.html">Technical Week 7</a> <br><br>	
+	<a href="http://helin24.github.io/blog-posts/week1_cultural.html">Cultural Week 1</a><br>
+	<a href="http://helin24.github.io/blog-posts/week3_cultural.html">Cultural Week 3</a><br>
+	<a href="http://helin24.github.io/blog-posts/week4_cultural.html">Cultural Week 4</a><br>
+	<a href="http://helin24.github.io/blog-posts/week5_cultural.html">Cultural Week 5</a><br>
+	<a href="http://helin24.github.io/blog-posts/week6_cultural.html">Cultural Week 6</a><br>
+	<a href="http://helin24.github.io/blog-posts/week7_cultural.html">Cultural Week 7</a><br><br>
+	<a href="http://helin24.github.io/unit1_projects/wireframe_sites.html">Wireframing Sites</a><br>
+	<a href="http://helin24.github.io/unit1_projects/my_wireframe.html">Wireframing My Site</a>
+</aside>
+
+
+<footer>
+	Helin Shiah 2014 <br>
+	<a href="mailto:helin.shiah@gmail.com">Contact me</a>
+</footer>
+
+</body>
+</html>

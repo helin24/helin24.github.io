@@ -1,0 +1,82 @@
+.box {
+	float: center;
+	margin-left: auto;
+	margin-right: auto;
+	height: 700px;
+}
+
+.box .section {
+	border: 2px solid blue;
+	float: left;
+	margin-left: auto;
+	margin-right: auto;
+	width: 63%;
+	padding: 10px;
+	background-color: aliceblue;	
+}
+
+.box .aside {
+	border: 2px solid blue;
+	float: right;
+	margin-left: auto;
+	margin-right: auto;
+	width: 33%;
+	padding: 10px;
+	background-color: aliceblue;
+}
+
+.box .image {
+	width: 33%;
+	float: right;
+	padding: 10px;
+}
+
+.box .image img {
+	width: 60%;
+	height: auto;
+}
+
+h4 {
+	position: relative;
+	top: -40px;
+	left: 5px;
+}
+
+article {
+	float: center;
+	border: 1px solid green;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 15px;
+	background-color: white;
+}
+
+.header {
+	float: center;
+	margin-bottom: 10px;
+	border: 2px solid blue;
+	background-color: aliceblue;
+	font-size: 26px;
+	font-weight: bold;
+	text-align: center;
+	color: darkblue;
+	padding: 20px;
+}
+
+.footer {
+	float: center;
+	margin-top: 10px;
+	border: 2px solid blue;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 10px;
+	background-color: aliceblue;
+}
+
+a:hover {
+	color: lightcoral;
+}
+
+* {
+	font-family: arial;
+}

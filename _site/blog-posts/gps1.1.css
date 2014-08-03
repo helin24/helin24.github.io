@@ -1,0 +1,51 @@
+
+* {
+    font-family: "verdana", sans-serif;
+}
+
+body {
+    background-color: rgb(174, 214, 240);
+}
+
+#header{
+    border:2px solid black;
+    width:35%;
+    margin:auto;
+    margin-bottom: 2px;
+    text-align:center;
+    }
+
+div {
+    border-radius: 10px;
+}
+
+#cities {
+    border:2px solid black;
+    height:300px;
+    padding:0px;
+    margin-bottom:4px;
+}
+
+.city{
+    border:2px solid black;
+    width:49%;
+    height:100%;
+    margin:0px;
+    text-align:center;
+}
+
+#NYC{
+    float:left;
+}
+
+#Houston{
+    float:right;
+}
+
+#footer{
+    border:2px solid black;
+}
+
+h3 {
+    text-align: center;
+}
