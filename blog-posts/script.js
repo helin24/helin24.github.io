@@ -1,4 +1,8 @@
 $(document).ready(function(){
+	var window_width = $(window).width();
+	var align = window_width - 350 - 400;
+
+	$('div#menu').css({'margin-left': align + 'px'});
 
 	$('section#about').css({'visibility': 'hidden'});
 
