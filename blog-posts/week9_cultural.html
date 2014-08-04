@@ -62,7 +62,28 @@
 		<h4>08/01/14</h4>
 		
 		<p>
-			When I was working on fizzbuzz, I tried to implement a version of the solution that created a blank array first using fizzarray = Array.new(num of elements, "") and then pushed in "fizz" if a multiple of 3 was encountered, "buzz" if a multiple of 5 was encountered, and the original number if not a multiple of 3 or 5. I was hoping that this would save me a line of assigning "fizzbuzz" to multiples of 15, however, I encountered the issue that when I pushed a string onto a specific empty string, say calling fizzarray[0] << "fizz", all the elements of fizzarray would concatenate another "fizz" string. This was very peculiar and I had a lot of trouble googling for a solution, because I didn't have distinctive words to describe this problem - I received many results that addressed assigning values to specific elements or assigning values to every element, and none troubleshooting the involuntary assignment of values to every element when intending to assign values to a specific element. Eventually I attended office hours with this question, and even then it took a while to isolate the problem, which was that creating an array with the Array.new command caused every element to refer to the same block, "". Therefore, when I pushed a string onto a specific element, the underlying object was actually changed for every element.
+			I had a difficult situation asking a specific question two weeks ago, so reviewing it in the context of questioning may help!
+		</p>
+		<p>
+			When I was working on fizzbuzz, I tried to implement a solution that created a blank array first using fizzarray = Array.new(num of elements, "") and then pushed in "fizz" if a multiple of 3 was encountered, "buzz" if a multiple of 5 was encountered, and the original number if not a multiple of 3 or 5. I was hoping that this would save me a line of assigning "fizzbuzz" to multiples of 15, however, I encountered the issue that when I pushed a string onto a specific empty string, say calling fizzarray[0] << "fizz", all the elements of fizzarray would concatenate another "fizz" string. (So [1,3,5,7,9] would give me something silly like [1,"fizz","fizzbuzz", "fizzbuzz", "fizzbuzzfizz"]).
+		</p>
+		<p>
+   		    I had a lot of trouble googling for a solution, because I didn't have distinctive words to describe this problem. I received many results that addressed assigning values to specific elements or assigning values to every element, and none troubleshooting the involuntary assignment of values to every element when intending to assign values to a specific element.
+   		</p>
+	    <p>
+	    	Eventually I attended office hours with this situation, and even then it took a while to isolate the problem, which was that creating an array with the Array.new command caused every element to refer to the same block, "". Therefore, when I pushed a string onto a specific element, the underlying object was actually changed for every element.
+		</p>
+		<p>
+			So what could I have done better to solve this problem more easily?
+		</p>
+		<p>
+			1. Have distinctive words for googling - Using words that were easily confused for other common problems was not helpful, and in this situation I'm still not sure what distinctive words could have been. In general, though, it is possible to modify the words to be more specific after a few iterations of searching and finding not-quite-right answers.
+		</p>
+		<p>
+			2. Break down problem into pieces - In my case, I could have had more success searching if I had thought about each step in my algorithm and researching each topic individually. I could have looked up information on Array.new assignments or array concatenation in pieces and isolated points where there may have been a problem.
+		</p>
+		<p>
+			3. Keep a question journal - When it came time to talk to a person about my question, it would have been helpful to have documented the things I'd tried and how they worked. Many times when I've documented potential questions, I actually end up solving my own problem. And if not, it saves time coming up with a succinct explanation that clearly lays out the problem for someone else.
 		</p>
 	</article>
 </section>
