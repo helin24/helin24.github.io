@@ -73,6 +73,7 @@ div.group {
 }
 
 div#menu {
+	position: relative;
 	margin-left: 350px;
 	margin-top: 3%;
 	z-index: 2;
