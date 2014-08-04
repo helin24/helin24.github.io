@@ -1,6 +1,4 @@
 /* Further adjustments:
-Try rgba for opacity on pictures
-Try to make background fixed size and maximum width so that
 larger browser size will not cause stretched page
 */
 
@@ -37,10 +35,14 @@ a:hover {
 	color: rgb(241, 140, 108);
 }
 
+div#heading {
+	position: absolute;
+	float: right;
+	top: 30px;
+	left: 70px;
+}
+
 header {
-	float: left;
-	width: 75%;
-	margin: 1% 10% 2% 10%;
 	font-size: 48px;
 	font-weight: bold;
 	color: darkblue;
@@ -71,8 +73,7 @@ div.group {
 }
 
 div#menu {
-	position: relative;
-	margin-left: 45%;
+	margin-left: 350px;
 	margin-top: 3%;
 	z-index: 2;
 }
@@ -143,13 +144,11 @@ img {
 /*class^="icon-" selects anything that starts with "icon" and class*=" icon-" selects anything that includes " icon"*/ 
 
 p#links {
-	position: fixed;
-	width: 20%;
-	margin: -8% 0% 0% 10%;
-	font-color: black;
+	width: 100%;
 	font-size: 24px;
 	text-decoration: none;
 	padding: 3px;	
+	position: fixed;
 }
 
 
