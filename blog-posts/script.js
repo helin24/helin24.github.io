@@ -4,6 +4,13 @@ $(document).ready(function(){
 
 	$('div#menu').css({'margin-left': align + 'px'});
 
+	if(align < 350) {
+		$('div#menu').css({'margin-top': '17%'});		
+	}
+	else {
+		$('div#menu').css({'margin-top': '3%'});		
+	}
+
 	$('section#about').css({'visibility': 'hidden'});
 
 	$('.level1').hover(
