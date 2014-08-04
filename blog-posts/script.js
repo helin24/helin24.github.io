@@ -1,9 +1,5 @@
 $(document).ready(function(){
 
-	var section_height = $(window).height() * 0.65;
-
-	$('section').css({'height': section_height + 'px'})
-
 	$('section#about').css({'visibility': 'hidden'});
 
 	$('.level1').hover(
@@ -19,9 +15,5 @@ $(document).ready(function(){
 		$('section#about').css({'visibility': 'visible'})
 	})
 
-	$(window).scroll(function() {
-		if($(this).scroll() > 100) {
-			$('section').hide();
-		}
-	})
+
 })

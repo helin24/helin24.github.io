@@ -50,6 +50,7 @@ header {
 }
 
 li {
+	position: relative;
 	display: inline-block;
 	font-weight: normal;
 }
@@ -66,14 +67,14 @@ li.level1 {
 
 div.group {
 	display: inline-block;
-	padding: 5px 10px 5px 10px;	
+	padding: 5px 10px;	
 }
 
 div#menu {
-	position: fixed;
+	position: relative;
 	margin-left: 45%;
-	margin-top: 20px;
-	z-index: 99;
+	margin-top: 3%;
+	z-index: 2;
 }
 
 
@@ -93,13 +94,12 @@ section {
 	position: relative;
 	float: right;
 	width: 55%;
-	margin: 10% 2% 2% 0%;
+	margin: -8% 2% 2% 0%;
 	background-color: rgba(255, 255, 255, 0.85);
 	padding: 2%;
 	border-radius: 10px;
 	border: 1px solid rgb(255, 147, 0);
-	z-index: 50;
-	overflow: auto;
+	z-index: 1;
 }	
 
 section#about {
@@ -145,7 +145,7 @@ img {
 p#links {
 	position: fixed;
 	width: 20%;
-	margin: 6% 0% 0% 10%;
+	margin: -8% 0% 0% 10%;
 	font-color: black;
 	font-size: 24px;
 	text-decoration: none;
